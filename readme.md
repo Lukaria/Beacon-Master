@@ -3,12 +3,12 @@ Beacon Master is a Unity mobile game where you control a lighthouse beam to high
 Some promo screenshots of the game:
 
 <p align="center">
-    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/locations_image.png" width="10%" />
-    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/beacons_image.png" width="10%" /> 
-    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/abilities_image.png" width="10%" /> 
-    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/defend_image.png" width="10%" /> 
-    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/mainmenu_image.png" width="10%" /> 
-    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/gameplay_image.png" width="10%" /> 
+    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/locations_image.png" width="25%" />
+    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/beacons_image.png" width="25%" /> 
+    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/abilities_image.png" width="25%" /> 
+    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/defend_image.png" width="25%" /> 
+    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/mainmenu_image.png" width="25%" /> 
+    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/gameplay_image.png" width="25%" /> 
 </p>
 
 
