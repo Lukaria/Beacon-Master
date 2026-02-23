@@ -29,7 +29,7 @@ I also utilized Unity features such as Decals, Shaders, and Post-Processing to c
 
 ## Q&A
 - How can I play?
-    The game is currently in the testing phase (Google Play requires 12 testers for public release). You can join as a tester via [Link] or download the latest release directly from GitHub (available for iOS and Android).
+    The game is currently in the testing phase (Google Play requires 12 testers for public release). Soon You can join as a tester or download right now the latest release directly from GitHub (available for Android. iOS will be avaiable soon too).
 - Why balance is so broken sometimes?
     The game is currently tuned to show players as much content as possible in a short timeframe. In rare cases, this means you might lose quickly. Good news: I hate intrusive ads, so there is only one ad placement that can be easily skipped using in-game currency.
 - Found a bug?
