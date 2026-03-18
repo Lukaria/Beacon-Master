@@ -1,4 +1,9 @@
 # Beacon Master
+How to play:
+- join as a tester on [Google Play](https://play.google.com/store/apps/details?id=com.AlkasGames.BeaconMaster) (version can be lower than latest github release)
+- download the latest release [directly from GitHub](https://github.com/Lukaria/Beacon-Master/releases/latest) (available for Android. iOS will be avaiable soon too)
+
+## Description
 **Beacon Master is a Unity mobile game** where you control a lighthouse beam to highlight approaching boats and defend yourself. The game features various boats, obstacles, locations, and beacons. As the game progresses, the difficulty increases, but players can choose abilities to help survive (these have different drop rates, so choose wisely!). Since the game is endless, the goal is to score as many points as possible by highlighting boats and obstacles.
 Some promo screenshots of the game:
 
