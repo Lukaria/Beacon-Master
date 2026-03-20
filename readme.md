@@ -36,7 +36,8 @@ I also utilized Unity features such as **Decals, Shaders, and Post-Processing** 
 - **How can I play?**
 The game is currently in the testing phase (Google Play requires 12 testers for public release). You can:
     - join as a tester on [Google Play](https://play.google.com/store/apps/details?id=com.AlkasGames.BeaconMaster) (version can be lower than latest github release due to verification process) 
-    - download the latest release [directly from GitHub](https://github.com/Lukaria/Beacon-Master/releases/latest) (available for Android. iOS will be avaiable soon too)
+    - download the latest release [directly from GitHub](https://github.com/Lukaria/Beacon-Master/releases/latest) (available for Android)
+Unfortunately, there will be no iOS build due to several limitations: the builds expire over time so you can just publish build only once, the Apple Developer Program is expensive ($99/year vs. Google's one-time $25 fee), and iOS does not support direct installation (side-loading) like Android APKs.
 - **Why balance is so broken sometimes?**
 The game is currently tuned to show players as much content as possible in a short timeframe. In rare cases, this means you might lose quickly. Good news: I hate intrusive ads, so there is only one ad placement that can be easily skipped using in-game currency.
 - **How is the code quality?**
