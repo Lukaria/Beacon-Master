@@ -12,7 +12,7 @@ Some promo screenshots of the game:
     <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/beacons_image.png" width="25%" /> 
     <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/abilities_image.png" width="25%" /> 
     <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/defend_image.png" width="25%" /> 
-    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/mainmenu_image.png" width="25%" /> 
+    <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/main_menu_image.png" width="25%" /> 
     <img src="https://github.com/Lukaria/Beacon-Master/blob/main/PromoMaterials/gameplay_image.png" width="25%" /> 
 </p>
 
