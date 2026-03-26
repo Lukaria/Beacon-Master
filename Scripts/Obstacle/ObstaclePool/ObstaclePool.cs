@@ -55,6 +55,7 @@ namespace Obstacle.ObstaclePool
 
             var obstaclePoolElement = _obstaclePrefabs.GetRandomElement();
             var randomPosition = _unusedSpawnPositions.GetRandomElement();
+            if (randomPosition is null) return false;
             
             var obstacle = _container.InstantiatePrefabForComponent<ObstacleBase>(
                 obstaclePoolElement.obstacle, randomPosition);

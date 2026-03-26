@@ -41,26 +41,21 @@ namespace UI.Windows
                 var window = await GetOrCreateWindow(id);
                 var layer = GetLayerForWindow(id);
 
-                // Логика стека: если это ПОЛНОЭКРАННОЕ окно, скрываем предыдущее
                 if (layer == WindowLayer.Screen && _navigationStack.Count > 0)
                 {
                     var top = _navigationStack.Peek();
-                    if (top.Id != id) // Не скрываем сами себя
+                    if (top.Id != id)
                     {
-                        // Не await, чтобы новое окно начало открываться параллельно
                         _ = top.CloseAsync();
                     }
                 }
 
-                // Добавляем в стек, если это не оверлей и не HUD
                 if (ShouldAddToStack(layer))
                 {
-                    // Если окно уже в стеке, вынимаем его (перемещаем наверх)
-                    // Упрощенная логика, можно доработать под конкретные нужды
                     _navigationStack.Push(window);
                 }
 
-                window.transform.SetAsLastSibling(); // Наверх внутри слоя
+                window.transform.SetAsLastSibling();
                 await window.OpenAsync();
                 return window;
             }
@@ -88,7 +83,7 @@ namespace UI.Windows
                 if (_navigationStack.Count > 0)
                 {
                     var previous = _navigationStack.Peek();
-                    await previous.OpenAsync(); // Re-open (или просто Show, если не уничтожали)
+                    await previous.OpenAsync();
                 }
             }
             finally
@@ -108,7 +103,6 @@ namespace UI.Windows
             return window;
         }
 
-        // Конфигурация: какое окно куда относится
         private WindowLayer GetLayerForWindow(WindowId id)
         {
             return id switch
@@ -139,13 +133,10 @@ namespace UI.Windows
             return layer == WindowLayer.Screen || layer == WindowLayer.Popup;
         }
 
-        // Обработка хардварной кнопки Back (для Android)
         /*private void Update()
        {
           if (Input.GetKeyDown(KeyCode.Escape))
            {
-               // Здесь можно добавить проверку: если открыт Popup - закрыть его,
-               // если главный экран - показать диалог выхода.
                if (_navigationStack.Count > 1)
                {
                    GoBack();

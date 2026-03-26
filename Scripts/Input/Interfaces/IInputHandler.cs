@@ -11,6 +11,10 @@ namespace Input.Interfaces
         public void OnSwipe(InputAction.CallbackContext ctx);
         
         public void OnZoom(InputAction.CallbackContext ctx);
+        
+        public void OnPress(InputAction.CallbackContext ctx);
+
+        public bool IsPressed();
 
         public void FixedUpdate();
     }

@@ -1,6 +1,5 @@
 ﻿using Camera;
 using Input.Interfaces;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
@@ -13,6 +12,7 @@ namespace Input.Handlers
         private readonly CameraConfigData _cameraConfig;
         private UnityEngine.Camera _camera;
         private Vector2 _lastPosition = Vector2.zero;
+        private bool _isPressed;
 
 
         public ComputerInputHandler(CameraConfigData cameraConfig)
@@ -56,6 +56,14 @@ namespace Input.Handlers
         public void OnZoom(InputAction.CallbackContext ctx)
         {
         }
+
+        public void OnPress(InputAction.CallbackContext ctx)
+        {
+            if (ctx.started) _isPressed = true;
+            else if (ctx.canceled) _isPressed = false;
+        }
+
+        public bool IsPressed() => _isPressed;
 
         public void FixedUpdate()
         {

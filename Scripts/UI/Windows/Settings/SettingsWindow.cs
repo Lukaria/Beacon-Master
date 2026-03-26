@@ -2,6 +2,7 @@
 using Haptic;
 using R3;
 using Settings;
+using TMPro;
 using UI.BottomBar;
 using UI.Windows.Common;
 using UI.Windows.Interfaces;
@@ -26,6 +27,8 @@ namespace UI.Windows.Settings
         [SerializeField] private Button disableAddButton;
         [SerializeField] private Button restorePurchasesButton;
         [SerializeField] private Button quitGameButton;
+        
+        [SerializeField] private TMP_Text version;
         
         private SettingsService _settings;
         private HapticManager _haptic;
@@ -53,6 +56,8 @@ namespace UI.Windows.Settings
             {
                 await OnCloseButtonClicked();
             }).AddTo(this);
+            
+            version.text = $"{Application.version}";
         }
 
         private void OnEnable()

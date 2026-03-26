@@ -5,5 +5,6 @@
         Standard = 0,
         Eiffel = 1,
         Caveman = 2,
+        Modern = 3
     }
 }

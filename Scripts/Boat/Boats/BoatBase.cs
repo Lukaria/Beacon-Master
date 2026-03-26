@@ -103,6 +103,7 @@ namespace Boat.Boats
 
         protected override void OnCharged()
         {
+            
             _cashScreenUIManager.AddCashWithShowUp(transform.position, boatStats.cash);
         }
 
@@ -116,9 +117,14 @@ namespace Boat.Boats
 
         public virtual void OnExplosion()
         {
+            if (!Charged)
+            {
+                _scoreService.SubtractScore(chargeStats.points);
+            }
+            
             _explosionManager.PlayAt(transform.position);
             _soundManager.PlaySfx(explosionSound, transform.position);
-            DestroyBoat();
+            DestroyBoat(); 
         }
 
         protected override void OnTriggerEnter(Collider other)

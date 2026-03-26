@@ -44,6 +44,7 @@ namespace Sound
         private void UpdateSfxVolume(float value)
         {
             _sfxVolume = value;
+            _uiVolume = value; //note: _ui volume changed with sfx for now
             foreach (var activeEmitter in _activeEmitters)
             {
                 activeEmitter.SetSfxVolume(_sfxVolume);

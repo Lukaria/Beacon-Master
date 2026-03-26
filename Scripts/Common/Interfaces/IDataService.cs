@@ -7,5 +7,7 @@ namespace Common.Interfaces
         public T GetData();
         public UniTask LoadAsync();
         public UniTask SaveAsync();
+
+        public void EnrichData(){}
     }
 }

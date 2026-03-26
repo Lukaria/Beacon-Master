@@ -27,7 +27,7 @@ namespace Chargeable
         private AbilityManager _abilityManager;
         protected SoundManager _soundManager;
         protected float _chargePercent;
-        private IScoreService _scoreService;
+        protected IScoreService _scoreService;
 
         [Inject]
         public void Construct(

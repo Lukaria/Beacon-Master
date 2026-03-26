@@ -37,7 +37,10 @@ namespace Input
             _playerInput.Gameplay.Zoom.performed += OnZoom;
             _playerInput.Gameplay.Zoom.canceled += OnZoom;
 
+            _playerInput.Gameplay.Press.started += OnPress;
+            _playerInput.Gameplay.Press.canceled += OnPress;
         }
+
 
         private void OnDestroy()
         {
@@ -52,6 +55,9 @@ namespace Input
             _playerInput.Gameplay.Zoom.started -= OnZoom;
             _playerInput.Gameplay.Zoom.performed -= OnZoom;
             _playerInput.Gameplay.Zoom.canceled -= OnZoom;
+            
+            _playerInput.Gameplay.Press.started -= OnPress;
+            _playerInput.Gameplay.Press.canceled -= OnPress;
         }
 
         private void OnEnable()
@@ -78,6 +84,13 @@ namespace Input
         {
             _inputHandler.OnZoom(ctx);
         }
+
+        public void OnPress(InputAction.CallbackContext ctx)
+        {
+            _inputHandler.OnPress(ctx);
+        }
+
+        public bool IsPressed() => _inputHandler.IsPressed();
 
         public void FixedUpdate()
         {
